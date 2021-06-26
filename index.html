@@ -18,9 +18,9 @@
       <div id="login-section">
         <div id="form-section">
           <form action="">
-            <input type="text" placeholder="Email address or phone number" />
-            <input type="password" name="" id="" placeholder="Password" />
-            <button type="submit" id="login-button">Log In</button>
+            <input type="text" id="username" placeholder="Email address or phone number" />
+            <input type="password" id="password" name="" placeholder="Password" />
+            <button type="submit" id="login-button" onclick="logInFunction()">Log In</button>
             <a href="#">Forgotten password?</a>
             <div id="line-break"></div>
             <button id="new-account-button">Create New Account</button>
@@ -31,5 +31,24 @@
         </div>
       </div>
     </div>
+    <script>
+      function logInFunction(){
+        var userName = document.getElementById("username").value;
+        var passWord = document.getElementById("password").value;
+        if(isNaN(userName)==false)
+        {
+          if(userName.length!=10)
+          alert ("Phone Number should have 10 digits");
+          else if(passWord.length<6)
+          alert ("Password should have atleast 6 characters");
+          else
+          alert ("Login Successful");
+        }
+        else if(passWord.length < 6)
+        alert ("Password should have atleast 6 characters");
+        else
+        alert ("Login Successful");
+      }
+    </script>
   </body>
 </html>
