@@ -31,24 +31,7 @@
         </div>
       </div>
     </div>
-    <script>
-      function logInFunction(){
-        var userName = document.getElementById("username").value;
-        var passWord = document.getElementById("password").value;
-        if(isNaN(userName)==false)
-        {
-          if(userName.length!=10)
-          alert ("Phone Number should have 10 digits");
-          else if(passWord.length<6)
-          alert ("Password should have atleast 6 characters");
-          else
-          alert ("Login Successful");
-        }
-        else if(passWord.length < 6)
-        alert ("Password should have atleast 6 characters");
-        else
-        alert ("Login Successful");
-      }
-    </script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
