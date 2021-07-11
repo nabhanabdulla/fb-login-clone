@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Facebook - log in or sign up</title>
+    <link rel="stylesheet" href="fb.css" />
+  </head>
+  <body>
+    <div id="heading-section">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/1280px-Facebook_Logo_%282019%29.svg.png"
+      />
+      <h2>
+        Facebook helps you connect and share with the people in your life.
+      </h2>
+    </div>
+    <div id="login-section">
+      <div id="form-section">
+        <form action="" onsubmit="return checkUserInput()" >
+          <input type="text" id="username" placeholder="Email address or phone number" />
+          <input type="password" id="password" placeholder="Password" />
+
+          <button type="submit" id="login-button">
+            Log In
+          </button>
+          <a href="#" id="forgot-link">Forgotten password?</a>
+
+          <hr>
+
+          <button id="new-account-button" onclick="createNewAccount()">Create New Account</button>
+        </form>
+      </div>
+      <div id="create-page-section">
+        <p>
+          <a href="#" id="create-page-link">Create a Page</a> for a celebrity
+          band or business
+        </p>
+      </div>
+    </div>
+    <script src="fb.js"></script>
+  </body>
+</html>

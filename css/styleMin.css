@@ -4,7 +4,6 @@
 } */
 
 body {
-  /* FIXME - Stick to one */
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(240, 242, 245);
 }
@@ -18,11 +17,9 @@ body {
 #heading-section {
   width: 60%;
   margin-right: 50px;
-  padding-top: 40px;
 }
 
-/* FIXME - To use id selector */
-#heading-section > img {
+img {
   width: 300px;
 }
 
@@ -32,11 +29,7 @@ body {
 
 #form-section {
   background-color: white;
-  width: 100%;
   border-radius: 10px;
-  box-sizing: border-box;
-  /* NOTE - If time permites */
-  /* box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.1); */
 }
 
 form {
@@ -46,8 +39,6 @@ form {
 }
 
 h2 {
-  /* FIXME - Default seems to be 28px */
-  /* font-size: 28px; */
   font-weight: normal;
 }
 
@@ -77,29 +68,15 @@ button {
 
 a {
   font-weight: bold;
+  text-decoration: none;
 }
 
-/* FIXME - To use id/class selector */
-form > a {
+#forgot-link {
   text-align: center;
   font-size: 14px;
-  text-decoration: none;
   color: rgb(24, 119, 242);
   margin: 15px 0px;
 }
-
-/* Line break - 
-  1. Use <hr>
-  2. Show #line-break div if color is required
-*/
-/* #line-break {
-  border-top: 1px solid rgb(218, 221, 225);
-} */
-
-/* hr {
-  height: 1px;
-  background-color: rgb(218, 221, 225);
-} */
 
 #new-account-button {
   margin: 25px auto 5px auto;
@@ -108,13 +85,15 @@ form > a {
 }
 
 #create-page-section {
-  width: 100%;
   margin-top: 30px;
   text-align: center;
   font-size: 14px;
 }
 
-#create-page-section a {
-  text-decoration: none;
+#create-page-link {
   color: black;
+}
+
+hr {
+  width: 100%;
 }

@@ -1,0 +1,21 @@
+https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/1280px-Facebook_Logo_%282019%29.svg.png
+
+
+Add text color and background colors as shown in the fb.com login page. Here are the colors you can use:
+-  Background  color: rgb(240, 242, 245)
+
+-  Border color for all <input> elements<: rgb(221, 223, 226)
+
+-  Text color for all <button> elements: white
+
+-  Login button background color: rgb(24, 119, 242)
+
+-  Forgot password link text color: rgb(24, 119, 242)
+
+-  Create new account button color: rgb(66, 183, 42)
+
+-  Create page link text color: black
+
+Use the CSS properties you've learnt till today to get your FB login page closer to how the original fb.com login page looks
+
+Here's the progress from today's session
